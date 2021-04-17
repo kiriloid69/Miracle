@@ -1,14 +1,6 @@
+@charset "UTF-8";
 * {
   outline: none;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: #000000;
 }
 
 body {
@@ -43,6 +35,19 @@ ul {
   margin-top: auto;
   margin-bottom: 0;
   padding-left: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+svg {
+  fill: #ef233c;
 }
 
 header {
@@ -173,9 +178,411 @@ menu {
   transition: 0.2s;
 }
 
+.breadcrumb-item.active {
+  color: #ef233c;
+}
+
+.breadcrumb-item a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: underline;
+}
+
+.breadcrumb {
+  margin: 54px 0 20px;
+}
+
+.main-slider {
+  margin-top: 54px;
+  position: relative;
+}
+
+.slider-image {
+  width: 100%;
+}
+
+.main-swipers-buttons {
+  position: absolute;
+  top: 25%;
+  z-index: 1;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 35px;
+}
+
+.slider-info {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  bottom: 0;
+  padding: 20px 30px;
+}
+
+.slider-info p {
+  line-height: 22px;
+}
+
+.slider-info .count-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.swiper-pagination-main-slider {
+  position: absolute;
+  bottom: 25px !important;
+  width: auto !important;
+  left: auto !important;
+  right: 30px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  background: none;
+  opacity: 1;
+  border: 2px solid #ef233c;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #ef233c;
+}
+
+.news-block:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.news-block {
+  margin: 54px 0;
+}
+
+.news-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 26px;
+}
+
+.news-header .all-article-link {
+  border-bottom: 1px solid #0079c2;
+  color: #0079c2;
+}
+
+.news-header button {
+  padding: 4px 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.news-header h2 {
+  padding: 0;
+  -webkit-transform: skew(10deg);
+          transform: skew(10deg);
+  color: #fff;
+  line-height: 27px;
+  margin-bottom: 0;
+}
+
+.news-card {
+  margin-bottom: 50px;
+}
+
+.news-card h3 {
+  line-height: 25px;
+  max-width: 87%;
+}
+
+.news-card img {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.news-card p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.serfing-news svg {
+  fill: #0079c2 !important;
+}
+
+.serfing-news .link-on-article {
+  color: #0079c2;
+}
+
+.serfing-news button {
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
+  background-color: #0079c2;
+}
+
+.serfing-news .all-article-link {
+  color: #0079c2;
+}
+
+.cake-news svg {
+  fill: #ff6c01 !important;
+}
+
+.cake-news .link-on-article {
+  color: #ff6c01;
+}
+
+.cake-news button {
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
+  background-color: #ff6c01;
+}
+
+.cake-news .all-article-link {
+  border-bottom: 1px solid #ff6c01;
+  color: #ff6c01;
+}
+
+.faq-category {
+  margin: 30px 0;
+}
+
+.faq-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq-header h2 {
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq-header svg {
+  margin-right: 8px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.nav-pills .nav-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ef233c;
+  padding: 9px 16px;
+  border: 2px solid #ef233c;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #ef233c;
+}
+
+.question-card {
+  margin-bottom: 20px;
+}
+
+.question-card .header-question-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 14px;
+}
+
+.question-card img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.question-card .username {
+  margin-left: 16px;
+  font-size: 16px;
+}
+
+.question-card .info-count:last-child {
+  margin-right: 0;
+}
+
+.question-card .content-question-card {
+  background-color: #f6f6f6;
+  padding: 20px;
+  position: relative;
+}
+
+.question-card .content-question-card::after {
+  content: "";
+  position: absolute;
+  /* Абсолютное позиционирование */
+  left: 10px;
+  top: -20px;
+  /* Положение треугольника */
+  border: 10px solid transparent;
+  border-bottom: 10px solid #f6f6f6;
+}
+
+.question-card .active-question {
+  color: #fff;
+  background-color: #ef233c;
+}
+
+.question-card .active-question::after {
+  border-bottom: 10px solid #ef233c;
+}
+
+.question-card .question {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.another-question-button {
+  border-radius: 5px;
+  background-color: #fff;
+  color: #ef233c;
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+  padding: 16px 0;
+  border: 2px solid #ef233c;
+}
+
+.faq-form {
+  background-color: #ef233c;
+  color: #fff;
+  padding: 30px;
+  margin: 40px 0 54px;
+}
+
+.form-input {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.form-input label {
+  margin-bottom: 10px;
+}
+
+.form-input input,
+.form-input textarea {
+  padding: 19px 50px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-input input::-webkit-input-placeholder,
+.form-input textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.form-input input:-ms-input-placeholder,
+.form-input textarea:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.form-input input::-ms-input-placeholder,
+.form-input textarea::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.form-input input::placeholder,
+.form-input textarea::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.form-input textarea {
+  min-height: 126px;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon svg {
+  position: absolute;
+  margin: 22px 0 20px 22px;
+}
+
+.form-submit-button {
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: transparent;
+  color: #ffffff;
+  width: 100%;
+  padding: 16px;
+  margin-top: 30px;
+}
+
+.form-submit-button svg {
+  margin-right: 12px;
+}
+
+.about p {
+  margin: 25px 0;
+}
+
+.about ol {
+  margin-left: 16px;
+}
+
+.about ol li {
+  padding-left: 12px;
+}
+
+.about ol li::marker {
+  color: #ef233c;
+  font-weight: 700;
+}
+
+.about-list li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 4px;
+  background-color: #ef233c;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 19px;
+}
+
 .sidebar {
   width: 300px;
   margin-left: auto;
+}
+
+.right-sidebar {
+  margin-left: 0;
 }
 
 .sidebar-heading {
