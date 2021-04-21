@@ -10,12 +10,70 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="../../css/main.css" />
-        <link rel="stylesheet" href="../../css/rubric.css" />
+        <link rel="stylesheet" href="../../css/state.css" />
     </head>
     <body>
         <header class="header">
             <div class="container">
                 <div class="top-bar">
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+
+                        <ul class="menu__box">
+                            <li><a class="menu__item" href="#">О сайте</a></li>
+                            <li><a class="menu__item" href="#">Контакты</a></li>
+                            <li><a class="menu__item" href="#">Карта сайта</a></li>
+                            <hr>
+                            <li><a class="menu__item" href="#">Работы</a></li>
+                            <li><a class="menu__item" href="#">Услуги</a></li>
+                            <li><a class="menu__item" href="#">Команда</a></li>
+                            <li><a class="menu__item" href="#">Отзывы</a></li>
+                            <li><a class="menu__item" href="#">Видео</a></li>
+                            <div class="society">
+                        <ul class="icons-society">
+                            <li class="icon-society">
+                                <a href="#" class="society-link">
+                                    <svg class="icon">
+                                        <use xlink:href="../../img/icons.svg#vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="icon-society">
+                                <a href="#" class="society-link">
+                                    <svg class="icon">
+                                        <use xlink:href="../../img/icons.svg#telegram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="icon-society">
+                                <a href="#" class="society-link">
+                                    <svg class="icon">
+                                        <use xlink:href="../../img/icons.svg#youtube"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="icon-society">
+                                <a href="#" class="society-link">
+                                    <svg class="icon">
+                                        <use xlink:href="../../img/icons.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="icon-society">
+                                <a href="#" class="society-link">
+                                    <svg class="icon">
+                                        <use xlink:href="../../img/icons.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                        </ul>
+                        
+                    </div>
                     <a class="logo" href="/pages/right-sidebar.html">
                         <img src="../../img/logo.svg" alt="Miracle" />
                     </a>
@@ -92,219 +150,541 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Сёрфинг</li>
+                                <li class="breadcrumb-item" aria-current="page"><a href="#">Сёрфинг</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Мифы о серфинге в популярных странах. Ожидание и реальность</li>
                             </ol>
                         </nav>
-                        <section class="about">
-                            <h1>Сёрфинг</h1>
+                        <section class="state">
+                            <h1>
+                                Мифы о серфинге в популярных странах. <br />
+                                Ожидание и реальность
+                            </h1>
+                            <div class="article-info">
+                                <div class="info-count">
+                                    <svg class="icon" width="20px" height="20px">
+                                        <use xlink:href="../../img/icons.svg#view"></use>
+                                    </svg>
+                                    <span>238</span>
+                                </div>
+                                <div class="info-count">
+                                    <svg class="icon" width="20px" height="20px">
+                                        <use xlink:href="../../img/icons.svg#comment"></use>
+                                    </svg>
+                                    <span>100</span>
+                                </div>
+                                <div class="info-count">
+                                    <svg class="icon" width="20px" height="20px">
+                                        <use xlink:href="../../img/icons.svg#time"></use>
+                                    </svg>
+                                    <span>≈ 5 минут</span>
+                                </div>
+                                <div class="info-count">
+                                    <svg class="icon" width="20px" height="20px">
+                                        <use xlink:href="../../img/icons.svg#date"></use>
+                                    </svg>
+                                    <span>19.11.2020</span>
+                                </div>
+                                <div class="info-count">
+                                    <svg class="icon" width="20px" height="20px">
+                                        <use xlink:href="../../img/icons.svg#star"></use>
+                                    </svg>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <div class="author-header">
+                                    <button>
+                                        <span>Автор</span>
+                                    </button>
+                                    <img src="../../img/users/user-1.png" alt="Эльвира" />
+                                    <span class="username">Эльвира Гертель</span>
+                                </div>
+                                <div class="comment-of-author">Я обожаю свою профессию за то, что благодаря ей можно прожить тысячу жизней. Я обожаю свою профессию за то, что благодаря ей можно прожить тысячу жизней. Я обожаю свою профессию за то, что благодаря ей можно прожить тысячу жизней. Я обожаю свою профессию за то, что</div>
+                            </div>
+                            <img class="state-main-img" src="../../img/news-image/51AhxwkYyHo.png" alt="Изображение статьи" />
+
+                            <div class="accordion accordion-flush" id="accordionNav">
+                                <div class="accordion-item accordion-item-content-list">
+                                    <h3 class="accordion-header accordion-header-state" id="flush-headingState">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseState" aria-controls="flush-collapseOne">Содержание</button>
+                                    </h3>
+                                    <div id="flush-collapseState" class="accordion-collapse collapse" aria-labelledby="flush-headingState" data-bs-parent="#accordionNav">
+                                        <div class="accordion-body accordion-body-state">
+                                            <div class="state-paragraph">
+                                                <a class="state-item-link" href="#">История серфинга от тысячи лет назад -до наших дней</a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="state-item-link"> История серфинга. XIX век </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="state-item-link"> История серфинга. XX век </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="state-item-link"> История серфинга. XXI век </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="state-paragraph">
+                                                <a class="state-item-link" href="#">История серфинга от тысячи лет назад -до наших дней</a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="state-item-link"> История серфинга. XIX век </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="state-item-link"> История серфинга. XX век </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="state-item-link"> История серфинга. XXI век </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="interesting-facts">На сегодняшний день большое количество людей в мире занимается серфингом, и особенно он развит в странах, которые имеют выход к океану. Там серфинг – это не экзотический вид спорта, как у нас, там – это может быть обычным хобби, уроком в школе или утренней зарядкой перед работой.</p>
+
+                            <h2 class="title-of-state">Гавайи</h2>
+
                             <p>Изумительно вкусный, аппетитный, хочется попробовать хоть маленький-маленький кусочек! Именно так можно сказать о торте, который очень-очень хочется попробовать.</p>
 
+                            <h2 class="subtitle-of-state">Ожидание</h2>
+
+                            <p>Изумительно вкусный, аппетитный, хочется попробовать хоть маленький-маленький кусочек! Именно так можно сказать о торте, который очень-очень хочется попробовать.</p>
+
+                            <ul class="about-list">
+                                <li>Крем «Пломбир» для выравнивания торта</li>
+                                <li>Классический бисквит на 5 яйцах</li>
+                                <li>Шоколадный торт с вишней и взбитыми сливками</li>
+                            </ul>
+
+                            <p>Тортики сякие:</p>
                             <ol>
                                 <li>Крем «Пломбир» для выравнивания торта</li>
                                 <li>Классический бисквит на 5 яйцах</li>
                                 <li>Шоколадный торт с вишней и взбитыми сливками</li>
                             </ol>
                             <p>Не отказывайте себе в удовольствии, не сдерживайте своих желаний, отведайте тортики, пошаговые рецепты и фото которых размещены в этом разделе нашего сайта.</p>
+
+                            <h2 class="subtitle-of-state">Реальность</h2>
                             <p>Изумительно вкусный, аппетитный, хочется попробовать хоть маленький-маленький кусочек! Именно так можно сказать о торте, который очень-очень хочется попробовать.</p>
+
+                            <h2 class="title-of-state">Текст с картинками</h2>
+
+                            <div class="text-with-img">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <img src="../../img/news-image/13.png" alt="Сёрфинг" />
+                                    </div>
+                                    <div class="col-lg-6">
+                                        Когда наши соотечественники решают попробовать серфинг, то чаще всего их выбор падает на известные места и страны, которые они видели в фильмах, ТВ-программах или о которых слышали от своих знакомых серферов. Серфинг – это бескрайний океан, волны, солнце, красивые пляжи и загорелые серферы – именно такие картинки мы встречаем на сайтах серф-кэмпов. Мы готовы
+                                        покупать билеты, бронировать путешествие и мчаться покорять волны. Но все ли так безоблачно и идеально? Давайте посмотрим на это с другой стороны.
+                                    </div>
+                                </div>
+                                <div class="text-with-img">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            Когда наши соотечественники решают попробовать серфинг, то чаще всего их выбор падает на известные места и страны, которые они видели в фильмах, ТВ-программах или о которых слышали от своих знакомых серферов. Серфинг – это бескрайний океан, волны, солнце, красивые пляжи и загорелые серферы – именно такие картинки мы встречаем на сайтах серф-кэмпов. Мы
+                                            готовы покупать билеты, бронировать путешествие и мчаться покорять волны. Но все ли так безоблачно и идеально? Давайте посмотрим на это с другой стороны.
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <img src="../../img/news-image/13.png" alt="Сёрфинг" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-with-img">
+                                <div class="row">
+                                    <div class="offset-lg-3 col-lg-6">
+                                        <div class="img-with-bottom-button">
+                                            <img src="../../img/news-image/13.png" alt="Сёрфинг" />
+                                            <a href="#" class="bottom-link">Попробовать серфинг</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-with-img">
+                                <div class="row">
+                                    <div class="offset-lg-3 col-lg-6">
+                                        <img src="../../img/news-image/13.png" alt="Сёрфинг" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <table class="table">
+                                <tr class="header">
+                                    <td>Шапка</td>
+                                    <td>Шапка</td>
+                                    <td>Шапка</td>
+                                </tr>
+                                <tr>
+                                    <td>люди, живущие здесь, катаются с детства</td>
+                                    <td>люди, живущие здесь, катаются с детства</td>
+                                    <td>люди, живущие здесь, катаются с детства</td>
+                                </tr>
+                                <tr>
+                                    <td>люди, живущие здесь, катаются с детства</td>
+                                    <td>люди, живущие здесь, катаются с детства</td>
+                                    <td>люди, живущие здесь, катаются с детства</td>
+                                </tr>
+                                <tr>
+                                    <td>люди, живущие здесь, катаются с детства</td>
+                                    <td>люди, живущие здесь, катаются с детства</td>
+                                    <td>люди, живущие здесь, катаются с детства</td>
+                                </tr>
+                            </table>
+                        </section>
+                        <section class="quotes-section">
+                            <div class="profile-info">
+                                <img src="../../img/users/user-3.png" alt="Эльвира" />
+                                <span class="username">Марк</span>
+                            </div>
+                            <div class="quote">
+                                <svg class="icon" width="63" height="44">
+                                    <use xlink:href="../../img/icons.svg#quote"></use>
+                                </svg>
+                                <span>В каком городе или стране, как вы считаете, должен хоть раз в жизни побывать каждый?</span>
+                            </div>
+
+                            <div class="quote">
+                                <svg class="icon" width="63" height="44">
+                                    <use xlink:href="../../img/icons.svg#warning"></use>
+                                </svg>
+                                <span>В каком городе или стране, как вы считаете, должен хоть раз в жизни побывать каждый?</span>
+                            </div>
+
+                            <div class="quote">
+                                <svg class="icon" width="63" height="44">
+                                    <use xlink:href="../../img/icons.svg#info"></use>
+                                </svg>
+                                <span>В каком городе или стране, как вы считаете, должен хоть раз в жизни побывать каждый?</span>
+                            </div>
+
+                            <div class="quote">
+                                <svg class="icon" width="63" height="44">
+                                    <use xlink:href="../../img/icons.svg#no"></use>
+                                </svg>
+                                <span>В каком городе или стране, как вы считаете, должен хоть раз в жизни побывать каждый?</span>
+                            </div>
+
+                            <div class="quote">
+                                <svg class="icon" width="72" height="44">
+                                    <use xlink:href="../../img/icons.svg#edit"></use>
+                                </svg>
+                                <span>В каком городе или стране, как вы считаете, должен хоть раз в жизни побывать каждый?</span>
+                            </div>
+
+                            <div class="quote">
+                                <svg class="icon" width="60" height="44">
+                                    <use xlink:href="../../img/icons.svg#idea"></use>
+                                </svg>
+                                <span>В каком городе или стране, как вы считаете, должен хоть раз в жизни побывать каждый?</span>
+                            </div>
+
+                            <div class="quote red-border">
+                                <svg class="icon" width="63" height="44">
+                                    <use xlink:href="../../img/icons.svg#quote"></use>
+                                </svg>
+                                <span>В каком городе или стране, как вы считаете, должен хоть раз в жизни побывать каждый?</span>
+                            </div>
+
+                            <div class="quote red-border">
+                                <svg class="icon" width="63" height="44">
+                                    <use xlink:href="../../img/icons.svg#warning"></use>
+                                </svg>
+                                <span>В каком городе или стране, как вы считаете, должен хоть раз в жизни побывать каждый?</span>
+                            </div>
+
+                            <div class="quote red-border">
+                                <svg class="icon" width="63" height="44">
+                                    <use xlink:href="../../img/icons.svg#info"></use>
+                                </svg>
+                                <span>В каком городе или стране, как вы считаете, должен хоть раз в жизни побывать каждый?</span>
+                            </div>
+
+                            <div class="quote red-border">
+                                <svg class="icon" width="63" height="44">
+                                    <use xlink:href="../../img/icons.svg#no"></use>
+                                </svg>
+                                <span>В каком городе или стране, как вы считаете, должен хоть раз в жизни побывать каждый?</span>
+                            </div>
+
+                            <div class="quote red-border">
+                                <svg class="icon" width="72" height="44">
+                                    <use xlink:href="../../img/icons.svg#edit"></use>
+                                </svg>
+                                <span>В каком городе или стране, как вы считаете, должен хоть раз в жизни побывать каждый?</span>
+                            </div>
+
+                            <div class="quote red-border">
+                                <svg class="icon" width="60" height="44">
+                                    <use xlink:href="../../img/icons.svg#idea"></use>
+                                </svg>
+                                <span>В каком городе или стране, как вы считаете, должен хоть раз в жизни побывать каждый?</span>
+                            </div>
+
+                            <div class="quote red-quote">
+                                <svg class="icon" width="63" height="44">
+                                    <use xlink:href="../../img/icons.svg#quote"></use>
+                                </svg>
+                                <span>В каком городе или стране, как вы считаете, должен хоть раз в жизни побывать каждый?</span>
+                            </div>
+
+                            <div class="quote red-quote">
+                                <svg class="icon" width="63" height="44">
+                                    <use xlink:href="../../img/icons.svg#warning"></use>
+                                </svg>
+                                <span>В каком городе или стране, как вы считаете, должен хоть раз в жизни побывать каждый?</span>
+                            </div>
+
+                            <div class="quote red-quote">
+                                <svg class="icon" width="63" height="44">
+                                    <use xlink:href="../../img/icons.svg#info"></use>
+                                </svg>
+                                <span>В каком городе или стране, как вы считаете, должен хоть раз в жизни побывать каждый?</span>
+                            </div>
+
+                            <div class="quote red-quote">
+                                <svg class="icon" width="63" height="44">
+                                    <use xlink:href="../../img/icons.svg#no"></use>
+                                </svg>
+                                <span>В каком городе или стране, как вы считаете, должен хоть раз в жизни побывать каждый?</span>
+                            </div>
+
+                            <div class="quote red-quote">
+                                <svg class="icon" width="72" height="44">
+                                    <use xlink:href="../../img/icons.svg#edit-white"></use>
+                                </svg>
+                                <span>В каком городе или стране, как вы считаете, должен хоть раз в жизни побывать каждый?</span>
+                            </div>
+
+                            <div class="quote red-quote">
+                                <svg class="icon" width="60" height="44">
+                                    <use xlink:href="../../img/icons.svg#idea-white"></use>
+                                </svg>
+                                <span>В каком городе или стране, как вы считаете, должен хоть раз в жизни побывать каждый?</span>
+                            </div>
+
+                            <div class="rate-of-state">
+                                <h3>Нравится статья?</h3>
+                            </div>
+                            <div class="like-statistic">
+                                <div class="like">
+                                    <svg class="icon" width="40" height="40">
+                                        <use xlink:href="../../img/icons.svg#like-active"></use>
+                                    </svg>
+                                    <span>234</span>
+                                </div>
+                                <div class="like dislike">
+                                    <svg class="icon" width="40" height="40">
+                                        <use xlink:href="../../img/icons.svg#like"></use>
+                                    </svg>
+                                    <span>234</span>
+                                </div>
+                            </div>
+                            <h3>Рейтинг статьи</h3>
+                            <div class="rate-of-state-stars">
+                                <svg class="icon" width="30" height="30">
+                                    <use xlink:href="../../img/icons.svg#star"></use>
+                                </svg>
+                                <svg class="icon" width="30" height="30">
+                                    <use xlink:href="../../img/icons.svg#star"></use>
+                                </svg>
+                                <svg class="icon" width="30" height="30">
+                                    <use xlink:href="../../img/icons.svg#star"></use>
+                                </svg>
+                                <svg class="icon" width="30" height="30">
+                                    <use xlink:href="../../img/icons.svg#cil_star"></use>
+                                </svg>
+                                <svg class="icon" width="30" height="30">
+                                    <use xlink:href="../../img/icons.svg#cil_star"></use>
+                                </svg>
+                            </div>
+
+                            <h3>Поделитесь в соцсетях</h3>
+                            <div class="society">
+                                <ul class="icons-society">
+                                    <li class="icon-society">
+                                        <a href="#" class="society-link">
+                                            <svg class="icon">
+                                                <use xlink:href="../../img/icons.svg#vk"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="icon-society">
+                                        <a href="#" class="society-link">
+                                            <svg class="icon">
+                                                <use xlink:href="../../img/icons.svg#telegram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="icon-society">
+                                        <a href="#" class="society-link">
+                                            <svg class="icon">
+                                                <use xlink:href="../../img/icons.svg#viber"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="icon-society">
+                                        <a href="#" class="society-link">
+                                            <svg class="icon">
+                                                <use xlink:href="../../img/icons.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="icon-society">
+                                        <a href="#" class="society-link">
+                                            <svg class="icon">
+                                                <use xlink:href="../../img/icons.svg#facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="icon-society">
+                                        <a href="#" class="society-link">
+                                            <svg class="icon">
+                                                <use xlink:href="../../img/icons.svg#twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="icon-society">
+                                        <a href="#" class="society-link">
+                                            <svg class="icon">
+                                                <use xlink:href="../../img/icons.svg#wa"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="icon-society">
+                                        <a href="#" class="society-link">
+                                            <svg class="icon">
+                                                <use xlink:href="../../img/icons.svg#livejournal"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="icon-society">
+                                        <a href="#" class="society-link">
+                                            <svg class="icon">
+                                                <use xlink:href="../../img/icons.svg#ok"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </section>
                         <section class="news">
                             <div class="news-block">
-                                <div class="row">
-                                    <div class="col-lg-6 news-card">
-                                        <h3>Мифы о серфинге в популярных странах. Ожидание и реальность</h3>
-                                        <div class="article-info">
-                                            <div class="info-count">
-                                                <svg class="icon" width="20px" height="20px">
-                                                    <use xlink:href="../../img/icons.svg#view"></use>
-                                                </svg>
-                                                <span>238</span>
-                                            </div>
-                                            <div class="info-count">
-                                                <svg class="icon" width="20px" height="20px">
-                                                    <use xlink:href="../../img/icons.svg#comment"></use>
-                                                </svg>
-                                                <span>100</span>
-                                            </div>
-                                        </div>
-                                        <img src="../../img/news-image/51AhxwkYyHo.png" alt="" />
-                                        <p class="short-description-news">На сегодняшний день большое количество людей в мире занимается серфингом, и особенно он развит в странах, которые имеют выход к океану.</p>
-                                        <a href="#" class="link-on-article">Читать далее...</a>
-                                    </div>
-                                    <div class="col-lg-6 news-card">
-                                        <h3>Серфинг как вид спорта, его организация и соревнования</h3>
-                                        <div class="article-info">
-                                            <div class="info-count">
-                                                <svg class="icon" width="20px" height="20px">
-                                                    <use xlink:href="../../img/icons.svg#view"></use>
-                                                </svg>
-                                                <span>238</span>
-                                            </div>
-                                            <div class="info-count">
-                                                <svg class="icon" width="20px" height="20px">
-                                                    <use xlink:href="../../img/icons.svg#comment"></use>
-                                                </svg>
-                                                <span>100</span>
-                                            </div>
-                                        </div>
-                                        <img src="../../img/news-image/51AhxwkYyHo-1.png" alt="" />
-                                        <p class="short-description-news">Серфинг неслучайно называют спортом королей: его история началась на островах Полинезии (Гавайях, Таити, Самоа и др.) столетия назад, где изначально он был доступен лишь знати.</p>
-                                        <a href="#" class="link-on-article">Читать далее...</a>
-                                    </div>
+                                <div class="news-header">
+                                    <button>
+                                        <h2>Похожие статьи</h2>
+                                    </button>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6 news-card">
-                                        <h3>Польза серфинга: философия волн как пособие для жизни</h3>
-                                        <div class="article-info">
-                                            <div class="info-count">
-                                                <svg class="icon" width="20px" height="20px">
-                                                    <use xlink:href="../../img/icons.svg#view"></use>
-                                                </svg>
-                                                <span>238</span>
+                                        <a href="#">
+                                            <h3>Мифы о серфинге в популярных странах. Ожидание и реальность</h3>
+                                            <div class="article-info">
+                                                <div class="info-count">
+                                                    <svg class="icon" width="20px" height="20px">
+                                                        <use xlink:href="../../img/icons.svg#view"></use>
+                                                    </svg>
+                                                    <span>238</span>
+                                                </div>
+                                                <div class="info-count">
+                                                    <svg class="icon" width="20px" height="20px">
+                                                        <use xlink:href="../../img/icons.svg#comment"></use>
+                                                    </svg>
+                                                    <span>100</span>
+                                                </div>
                                             </div>
-                                            <div class="info-count">
-                                                <svg class="icon" width="20px" height="20px">
-                                                    <use xlink:href="../../img/icons.svg#comment"></use>
-                                                </svg>
-                                                <span>100</span>
-                                            </div>
-                                        </div>
-                                        <img src="../../img/news-image/51AhxwkYyHo-2.png" alt="" />
-                                        <p class="short-description-news">Это большой талант, не просто проживать каждый день, а проживать его со смыслом. В какой-то части в этом и заключается польза серфинга — это хорошо не только для тела, но и для души.</p>
-                                        <a href="#" class="link-on-article">Читать далее...</a>
+                                            <img src="../../img/news-image/51AhxwkYyHo.png" alt="" />
+                                            <p class="short-description-news">На сегодняшний день большое количество людей в мире занимается серфингом, и особенно он развит в странах, которые имеют выход к океану.</p>
+                                            <a href="#" class="link-on-article">Читать далее...</a>
+                                        </a>
                                     </div>
                                     <div class="col-lg-6 news-card">
-                                        <h3>Серфинг как вид спорта, его организация и соревнования</h3>
-                                        <div class="article-info">
-                                            <div class="info-count">
-                                                <svg class="icon" width="20px" height="20px">
-                                                    <use xlink:href="../../img/icons.svg#view"></use>
-                                                </svg>
-                                                <span>238</span>
+                                        <a href="">
+                                            <h3>Серфинг как вид спорта, его организация и соревнования</h3>
+                                            <div class="article-info">
+                                                <div class="info-count">
+                                                    <svg class="icon" width="20px" height="20px">
+                                                        <use xlink:href="../../img/icons.svg#view"></use>
+                                                    </svg>
+                                                    <span>238</span>
+                                                </div>
+                                                <div class="info-count">
+                                                    <svg class="icon" width="20px" height="20px">
+                                                        <use xlink:href="../../img/icons.svg#comment"></use>
+                                                    </svg>
+                                                    <span>100</span>
+                                                </div>
                                             </div>
-                                            <div class="info-count">
-                                                <svg class="icon" width="20px" height="20px">
-                                                    <use xlink:href="../../img/icons.svg#comment"></use>
-                                                </svg>
-                                                <span>100</span>
-                                            </div>
-                                        </div>
-                                        <img src="../../img/news-image/7yqyQQXgOT8.png" alt="" />
-                                        <p class="short-description-news">Бирюзовая волна, закручивающаяся в слоумо, звуки регги, расслабленные загорелые серферы, красиво откидывающие волосы при выходе из воды.</p>
-                                        <a href="#" class="link-on-article">Читать далее...</a>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6 news-card">
-                                        <h3>От Бразилии до Питера: самые необычные серф-споты мира</h3>
-                                        <div class="article-info">
-                                            <div class="info-count">
-                                                <svg class="icon" width="20px" height="20px">
-                                                    <use xlink:href="../../img/icons.svg#view"></use>
-                                                </svg>
-                                                <span>238</span>
-                                            </div>
-                                            <div class="info-count">
-                                                <svg class="icon" width="20px" height="20px">
-                                                    <use xlink:href="../../img/icons.svg#comment"></use>
-                                                </svg>
-                                                <span>100</span>
-                                            </div>
-                                        </div>
-                                        <img src="../../img/news-image/6.png" alt="" />
-                                        <p class="short-description-news">Продвинутых экстремалов не удивишь серфингом в Австралии или на Филиппинах, и даже далекие от спорта туристы уже осваивают серф-доски на спотах Бали и Шри-Ланки.</p>
-                                        <a href="#" class="link-on-article">Читать далее...</a>
-                                    </div>
-                                    <div class="col-lg-6 news-card">
-                                        <h3>Серфинг в океане! Что это? Основные факты</h3>
-                                        <div class="article-info">
-                                            <div class="info-count">
-                                                <svg class="icon" width="20px" height="20px">
-                                                    <use xlink:href="../../img/icons.svg#view"></use>
-                                                </svg>
-                                                <span>238</span>
-                                            </div>
-                                            <div class="info-count">
-                                                <svg class="icon" width="20px" height="20px">
-                                                    <use xlink:href="../../img/icons.svg#comment"></use>
-                                                </svg>
-                                                <span>100</span>
-                                            </div>
-                                        </div>
-                                        <img src="../../img/news-image/7.png" alt="" />
-                                        <p class="short-description-news">Даже когда речь заходит о серфинге, Великобритания остается верна своему имиджу страны рек и туманов. Местные экстремалы штурмуют приливную волну на реке Северн в графстве Глостершир.</p>
-                                        <a href="#" class="link-on-article">Читать далее...</a>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6 news-card">
-                                        <h3>Серфинг как он есть или как один трип изменил всю мою жизнь</h3>
-                                        <div class="article-info">
-                                            <div class="info-count">
-                                                <svg class="icon" width="20px" height="20px">
-                                                    <use xlink:href="../../img/icons.svg#view"></use>
-                                                </svg>
-                                                <span>238</span>
-                                            </div>
-                                            <div class="info-count">
-                                                <svg class="icon" width="20px" height="20px">
-                                                    <use xlink:href="../../img/icons.svg#comment"></use>
-                                                </svg>
-                                                <span>100</span>
-                                            </div>
-                                        </div>
-                                        <img src="../../img/news-image/10.png" alt="" />
-                                        <p class="short-description-news">…Не знаю с чего начать. Что такое серфинг? Ну в первую очередь это свобода. Свобода, которая ощущается во всем. В безоблачном небе и палящем солнце. В холодном ветре несущем песчаные вихри и рушащим волны.</p>
-                                        <a href="#" class="link-on-article">Читать далее...</a>
-                                    </div>
-                                    <div class="col-lg-6 news-card">
-                                        <h3>
-                                            Серфинг для души. <br />
-                                            Куда стоит поехать
-                                        </h3>
-                                        <div class="article-info">
-                                            <div class="info-count">
-                                                <svg class="icon" width="20px" height="20px">
-                                                    <use xlink:href="../../img/icons.svg#view"></use>
-                                                </svg>
-                                                <span>238</span>
-                                            </div>
-                                            <div class="info-count">
-                                                <svg class="icon" width="20px" height="20px">
-                                                    <use xlink:href="../../img/icons.svg#comment"></use>
-                                                </svg>
-                                                <span>100</span>
-                                            </div>
-                                        </div>
-                                        <img src="../../img/news-image/11.png" alt="" />
-                                        <p class="short-description-news">Рассекать по волнам могут не только в фильмах и рекламе. Куда можно поехать и что нужно знать, чтобы активно и беззаботно провести отдых, запомнить его надолго и научиться серфингу.</p>
-                                        <a href="#" class="link-on-article">Читать далее...</a>
+                                            <img src="../../img/news-image/51AhxwkYyHo-1.png" alt="" />
+                                            <p class="short-description-news">Серфинг неслучайно называют спортом королей: его история началась на островах Полинезии (Гавайях, Таити, Самоа и др.) столетия назад, где изначально он был доступен лишь знати.</p>
+                                            <a href="#" class="link-on-article">Читать далее...</a>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </section>
-                        <div class="row">
-                            <div class="offset-lg-3 col-lg-6">
-                                <nav class="pages-numbers" aria-label="Page navigation">
-                                    <ul class="pagination-pages">
-                                        <li class="page-item-arrow">
-                                            <svg class="icon" width="9" height="17">
-                                                <use xlink:href="../../img/icons.svg#arrow-left"></use>
+                        <section class="comments">
+                            <form action="" class="form white-form">
+                                <h2 class="title-of-state">Добавить комментарий</h2>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-input">
+                                            <label for="question">Комментарий</label>
+                                            <div class="input-with-icon">
+                                                <svg class="icon" width="17px" height="17px">
+                                                    <use xlink:href="../../img/icons.svg#question"></use>
+                                                </svg>
+                                                <textarea name="question" placeholder="Ваш вопрос"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-input">
+                                            <label for="username">Имя <span class="red">*</span></label>
+                                            <div class="input-with-icon">
+                                                <svg class="icon" width="17px" height="17px">
+                                                    <use xlink:href="../../img/icons.svg#user"></use>
+                                                </svg>
+                                                <input type="text" name="username" placeholder="Введите ваше имя" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-input">
+                                            <label for="email">Email <span class="red">*</span></label>
+                                            <div class="input-with-icon">
+                                                <svg class="icon" width="20px" height="20px">
+                                                    <use xlink:href="../../img/icons.svg#email"></use>
+                                                </svg>
+                                                <input type="text" name="email" placeholder="Введите Email" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkbox-save-name">
+                                    <input type="checkbox" class="save-checkbox" id="save-checkbox" />
+                                    <label for="save-checkbox">Сохранить моё имя и email в этом браузере для последующих моих комментариев.</label>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <button class="form-submit-button">
+                                            <svg class="icon" width="16px" height="13px">
+                                                <use xlink:href="../../img/icons.svg#check"></use>
                                             </svg>
-                                        </li>
-                                        <li class="page-item"><a class="page-link-numbers" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link-numbers" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link-numbers active" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link-numbers" href="#">4</a></li>
-                                        <li class="page-item"><a class="page-link-numbers" href="#">5</a></li>
-                                        <li class="page-item-arrow">
-                                            <svg class="icon" width="9" height="17">
-                                                <use xlink:href="../../img/icons.svg#arrow-right"></use>
-                                            </svg>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
+                                            Отправить комментарий
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
                     </div>
                     <div class="col-lg-4">
                         <aside class="sidebar">

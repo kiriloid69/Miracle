@@ -1,0 +1,220 @@
+@charset "UTF-8";
+h1 {
+  margin: 25px 0;
+}
+
+.state .article-info {
+  margin-bottom: 25px;
+}
+
+.author-header {
+  width: 300px;
+}
+
+.author-header img {
+  margin-left: 12px;
+  margin-right: 16px;
+}
+
+.author-header button {
+  padding: 4px 16px;
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ef233c;
+}
+
+.author-header button span {
+  -webkit-transform: skew(10deg);
+          transform: skew(10deg);
+  font-weight: 700;
+  color: #fff;
+  display: block;
+}
+
+.author-header .username {
+  font-weight: 700;
+}
+
+.comment-of-author {
+  font-size: 14px;
+  line-height: 19px;
+  padding: 15px;
+  background-color: #f6f6f6;
+  margin-top: 14px;
+  position: relative;
+}
+
+.comment-of-author::after {
+  content: "";
+  position: absolute;
+  /* Абсолютное позиционирование */
+  left: 100px;
+  top: -20px;
+  /* Положение треугольника */
+  border: 10px solid transparent;
+  border-bottom: 10px solid #f6f6f6;
+}
+
+.state-main-img {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.accordion-header-state button {
+  padding: 20px 30px;
+  color: #ef233c !important;
+}
+
+.state-paragraph:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.state-paragraph li {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.state-paragraph li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 4px;
+  background-color: #ef233c;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 9px;
+}
+
+.accordion-body-state {
+  background: #f6f6f6;
+  padding: 20px 30px;
+}
+
+.state-item-link {
+  text-decoration: underline;
+}
+
+.state-item-link:hover {
+  text-decoration: none;
+  color: #ef233c;
+}
+
+.interesting-facts {
+  margin: 54px 0;
+}
+
+.text-with-img {
+  margin: 25px 0;
+}
+
+.text-with-img img {
+  width: 100%;
+}
+
+.text-with-img .bottom-link {
+  padding: 15px 10px;
+  background-color: #f6f6f6;
+  width: 100%;
+  display: block;
+}
+
+.table .header {
+  background-color: #ef233c;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.table .header td {
+  border: 1px solid #fff;
+}
+
+.table td {
+  padding: 10px 20px;
+  border: 1px solid #ef233c;
+  line-height: 22px;
+}
+
+.checkbox-save-name {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkbox-save-name .save-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ef233c;
+  margin-right: 11px;
+  background-color: red;
+}
+
+.profile-info img {
+  margin-right: 16px;
+}
+
+.quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background-color: #f6f6f6;
+  margin-bottom: 25px;
+}
+
+.quote span {
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 22px;
+  font-style: italic;
+}
+
+.red-border {
+  border: 2px solid #ef233c;
+}
+
+.red-quote {
+  color: #fff;
+  background-color: #ef233c;
+}
+
+.red-quote svg {
+  fill: #fff;
+}
+
+.like-statistic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: center;
+}
+
+.like-statistic .like span {
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.like-statistic .dislike {
+  margin-left: 33px;
+}
+
+.like-statistic .dislike svg {
+  margin-top: 15px;
+}
+
+.like-statistic .rate-of-state-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=state.css.map */

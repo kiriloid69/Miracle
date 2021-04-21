@@ -1,0 +1,44 @@
+$main-color: #ef233c;
+$second-color: #000000;
+$first-category: #0079c2;
+$second-category: #ff6c01;
+
+.news-block {
+    margin: 0;
+}
+
+h1 {
+    margin: 25px 0;
+}
+
+.news {
+    margin-top: 54px;
+}
+
+.pages-numbers {
+    height: 30px;
+}
+
+.page-item-arrow {
+    background-color: $main-color;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.pagination-pages {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-link-numbers {
+    font-size: 20px;
+    font-weight: 700;
+    &.active {
+        color: $main-color;
+    }
+    &:hover {
+        color: $main-color;
+    }
+}

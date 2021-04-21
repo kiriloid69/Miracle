@@ -1,0 +1,46 @@
+.news-block {
+  margin: 0;
+}
+
+h1 {
+  margin: 25px 0;
+}
+
+.news {
+  margin-top: 54px;
+}
+
+.pages-numbers {
+  height: 30px;
+}
+
+.page-item-arrow {
+  background-color: #ef233c;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.pagination-pages {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-link-numbers {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.page-link-numbers.active {
+  color: #ef233c;
+}
+
+.page-link-numbers:hover {
+  color: #ef233c;
+}
+/*# sourceMappingURL=rubric.css.map */
